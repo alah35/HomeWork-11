@@ -29,7 +29,15 @@ bool isValidFirstHalf(std::string);
 
 bool isValidSecondHalf(std::string);
 
-std::string getNumFromIP(std::string, int x);
+std::string getPartFromString(std::string, int x, char ch);
 
 bool isValidIP(std::string);
+
+bool isCorrectNum(std::string s);
+
+std::string convertForCompareInt(std::string);
+
+std::string convertForCompareFraction(std::string);
+
+std::string MoreOrLess (std::string a, std::string b);
 #endif //HOMEWORK_11_HELPER_H
