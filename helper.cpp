@@ -137,6 +137,33 @@ std::string getNumFromIP(std::string s, int x) {
     return answer;
 }
 
+bool isValidIP(std::string s) {
+    int amountPoint = 0;
+    bool doublePoint = false;
+    for (int i = 0; i < s.length() - 1; i++) {
+        if (s[i] == '.')
+            amountPoint++;
+        if (s[i] == '.' && s[i+1] == '.')
+            doublePoint = true;
+    }
+    if (amountPoint > 3 || s[0] == '.' || s[s.length() -1] == '.' || doublePoint)
+        return false;
+
+    std::string num;
+    for (int i = 1; i <= 4; i++) {
+        num = getNumFromIP(s, i);
+        if (num == "" || (num[0] == '0' && num.length() != 1))
+            return false;
+        for (int j = 0; j < num.length(); j++) {
+            if (num[j] < '0' || num[j] > '9')
+                return false;
+        }
+        if (std::stoi(num) > 255)
+            return false;
+    }
+    return true;
+}
+
 
 
 

@@ -30,4 +30,6 @@ bool isValidFirstHalf(std::string);
 bool isValidSecondHalf(std::string);
 
 std::string getNumFromIP(std::string, int x);
+
+bool isValidIP(std::string);
 #endif //HOMEWORK_11_HELPER_H
