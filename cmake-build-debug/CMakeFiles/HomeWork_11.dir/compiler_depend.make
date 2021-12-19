@@ -121,6 +121,34 @@ CMakeFiles/HomeWork_11.dir/helper.cpp.obj: ../helper.cpp \
   E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cerrno \
   E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h \
   E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.tcc \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeinfo \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ios_base.h \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.h \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_classes.tcc \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf.tcc \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.h \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/streambuf_iterator.h \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
+  E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
   ../helper.h
 
 CMakeFiles/HomeWork_11.dir/main.cpp.obj: ../main.cpp \
@@ -526,10 +554,6 @@ E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c
 
 E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.tcc:
 
-../helper.h:
-
-../main.cpp:
-
 E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:
 
 E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios:
@@ -573,3 +597,7 @@ E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c
 E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc:
 
 E:/JetBrains/CLion\ 2021.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream:
+
+../helper.h:
+
+../main.cpp:

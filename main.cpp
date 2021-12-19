@@ -3,23 +3,11 @@
 
 
 int main() {
-    // Task 1
-//    std::string input;
-//    int parameter;
-//    std::cout << "Enter your text: ";
-//    std::getline(std::cin, input);
-//    std::cout << "Enter the encryption parameter: ";
-//    std::cin >> parameter;
-//
-//    std::cout << "Encrypted text: " << encrypt_caesar(input, parameter) << std::endl;
-//    std::cout << "Decrypted text: " << decrypt_caesar(encrypt_caesar(input, parameter), parameter) << std::endl;
+std::string ip;
+std::cout << "Enter IP address: ";
+std::cin >> ip;
 
-    // Task 2'
-    std::string email;
-    std::cout << "Enter your email address: ";
-    std::cin >> email;
+std::cout << getNumFromIP(ip, 1) << " " << getNumFromIP(ip, 2) << " " << getNumFromIP(ip, 3)
+          << " " << getNumFromIP(ip, 4);
 
-    if (isValidFirstHalf(email) && isValidSecondHalf(email))
-        std::cout << "Yes\n";
-    else std::cout << "No\n";
 }

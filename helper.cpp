@@ -1,7 +1,29 @@
 #include <string>
+#include <iostream>
 #include "helper.h"
 
-std::string encrypt_caesar (std::string s, int parameter) {
+void task1() {
+    std::string input;
+    int parameter;
+    std::cout << "Enter your text: ";
+    std::getline(std::cin, input);
+    std::cout << "Enter the encryption parameter: ";
+    std::cin >> parameter;
+
+    std::cout << "Encrypted text: " << encrypt_caesar(input, parameter) << std::endl;
+    std::cout << "Decrypted text: " << decrypt_caesar(encrypt_caesar(input, parameter), parameter) << std::endl;
+}
+
+void task2() {
+    std::string email;
+    std::cout << "Enter your email address: ";
+    std::cin >> email;
+    if (isValidFirstHalf(email) && isValidSecondHalf(email))
+        std::cout << "Yes\n";
+    else std::cout << "No\n";
+}
+
+std::string encrypt_caesar (std::string s, int parameter) { // encrypt string
     for (int i = 0; i < s.length(); i++) {
         if ( (s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z') ) {
             if (s[i] + parameter > 'Z' && s[i] == toupper(s[i])) {
@@ -14,7 +36,7 @@ std::string encrypt_caesar (std::string s, int parameter) {
     return s;
 }
 
-std::string decrypt_caesar (std::string s, int parameter) {
+std::string decrypt_caesar (std::string s, int parameter) { // decrypt string
     for (int i = 0; i < s.length(); i++) {
         if ( (s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z') ) {
             if (s[i] - parameter < 'A' && s[i] == toupper(s[i]))
@@ -58,7 +80,8 @@ bool isMatch(std::string str, std::string substr) { // check if substr is includ
         for (int j = 0; j < substr.length(); j++) {
             if (str[i + j] != substr[j])
                 break;
-            else if (j == substr.length() - 1) return true;
+            else if (j == substr.length() - 1)
+                return true;
         }
     }
     return false;
@@ -92,6 +115,28 @@ bool isValidSecondHalf(std::string s) {
     }
     return true;
 }
+
+std::string getNumFromIP(std::string s, int x) {
+    if (x < 1 || x > 4)
+        return "";
+    int pointPos = 0;
+    for (int i = 1; i <= x; i++) {
+        pointPos = s.find('.', pointPos + 1);
+    }
+    int rightPos;
+    pointPos == std::string::npos ? rightPos = s.length() : rightPos = pointPos;
+    int leftPos;
+    s.rfind('.',rightPos- 1) == std::string::npos ? leftPos = 0 : leftPos = s.rfind('.',rightPos - 1);
+
+    std::string answer = "";
+    int i;
+    leftPos == 0 ? i = leftPos : i = leftPos + 1;
+    for (; i < rightPos; i++) {
+        answer += s[i];
+    }
+    return answer;
+}
+
 
 
 
