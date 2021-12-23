@@ -66,7 +66,7 @@ std::string decrypt_caesar (std::string s, int parameter) { // decrypt string
     return s;
 }
 
-std::string firstHalfLine(std::string s, char ch) { // returns the part of the string before symbol ch
+std::string getFirstHalfOfLine(std::string s, char ch) { // returns the part of the string before symbol ch
     std::string firstHalf = "";
     if (s.find(ch) == std::string::npos)
         return "";
@@ -78,7 +78,7 @@ std::string firstHalfLine(std::string s, char ch) { // returns the part of the s
     }
 }
 
-std::string secondHalfLine(std::string s, char ch) { // returns the part of the string after symbol ch
+std::string getSecondHalfOfLine(std::string s, char ch) { // returns the part of the string after symbol ch
     std::string secondHalf = "";
     if (s.find(ch) == std::string::npos)
         return "";
@@ -105,7 +105,7 @@ bool isMatch(std::string str, std::string substr) { // check if substr is includ
 }
 
 bool isValidFirstHalf(std::string s) {
-    s = firstHalfLine(s, '@');
+    s = getFirstHalfOfLine(s, '@');
     if (s == "" || s[0] == '.' || s[s.length() - 1] == '.' || s.length() > 64 || isMatch(s,"..")) {
         return false;
     }
@@ -120,7 +120,7 @@ bool isValidFirstHalf(std::string s) {
 }
 
 bool isValidSecondHalf(std::string s) {
-    s = secondHalfLine(s, '@');
+    s = getSecondHalfOfLine(s, '@');
     if (s == "" || s[0] == '.' || s[s.length() - 1] == '.' || s.length() > 63 || isMatch(s, "..")
         || s.find('@') != std::string::npos)
         return false;
