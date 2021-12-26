@@ -40,6 +40,10 @@ void task4(){
     std::cout << MoreOrLess(a, b);
 }
 
+void task5() {
+
+}
+
 std::string encrypt_caesar (std::string s, int parameter) { // encrypt string
     for (int i = 0; i < s.length(); i++) {
         if ( (s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z') ) {
@@ -247,6 +251,131 @@ std::string MoreOrLess(std::string a, std::string b) {
     } else
         return "-1";
 }
+
+ void outputField(std::string *s) {
+    for (int i = 0; i < s->length(); i++) {
+        for (int j = 0; j < s[i].length(); j++) {
+            std::cout << s[i][j] << " ";
+        }
+        std::cout << std::endl;
+    }
+    std::cout << std::endl;
+}
+
+char getElem(std::string *s, int x, int y) {
+    return s[x][y];
+}
+
+std::string getLine(std::string *s, int x) {
+    std::string line;
+    for (int j = 0; j < s[x].length(); j++) {
+        line += s[x][j];
+    }
+    return line;
+}
+
+std::string getColumn(std::string *s, int x) {
+    std::string column;
+    for (int i = 0; i <s->length(); i++) {
+        column += s[i][x];
+    }
+    return column;
+}
+
+bool isWinnerInLine(std::string s) {
+    for (int i = 1; i < s.length(); i++) {
+        if (s[i] == s[i - 1])
+            continue;
+        else
+            return false;
+    }
+    return true;
+}
+
+bool isWinnerInDiagonal1(std::string *s) {
+    for (int i = 1; i < s->length(); i++) {
+        if (s[i][i] == s[i - 1][i - 1])
+            continue;
+        else
+            return false;
+    }
+    return true;
+}
+
+bool isWinnerInDiagonal2(std::string *s) {
+    for (int i = 0; i < s->length(); i++) {
+       for (int j = s[i].length() - 1; j > 1; j--) {
+           if (s[i][j] == s[i][j - 1])
+               continue;
+           else
+               return false;
+       }
+    }
+    return true;
+}
+
+int getAmountOfSym(std::string *s, char ch) {
+    int counter = 0;
+    for (int i = 0; i < s->length(); i++) {
+        for (int j = 0; j < s[i].length(); j++) {
+            if (s[i][j] == ch)
+               counter++;
+        }
+    }
+    return counter;
+}
+
+std::string getWinner(std::string *s) {
+    char winner = ' ';
+    for (int i = 0; i <s->length(); i++) {
+        if (isWinnerInLine(getLine(s, i)) || isWinnerInLine(getColumn(s, i)))
+            winner = getElem(s, i, i);
+    }
+    if (isWinnerInDiagonal1(s))
+        winner = s[0][0];
+    if (isWinnerInDiagonal2(s))
+        winner = s[0][s[0].length()];
+
+    if (winner == 'X')
+        return "Petya won";
+    else if (winner == 'O')
+        return "Vanya won";
+    else
+        return "Nobody";
+}
+
+bool isValidField(std::string *s) {
+    int amountWins = 0;
+    for (int i = 0; i < s->length(); i++) {
+        if (isWinnerInLine(getLine(s, i)))
+            amountWins++;
+        if (isWinnerInLine(getColumn(s, i)))
+            amountWins++;
+    }
+    if (isWinnerInDiagonal1(s))
+        amountWins++;
+    if (isWinnerInDiagonal2(s))
+        amountWins++;
+
+    if (amountWins > 1)
+        return false;
+
+    if (getWinner(s) == "Petya won" && (getAmountOfSym(s, 'O') >= getAmountOfSym(s, 'X')))
+        return false;
+    if (getWinner(s) == "Vanya won" && (getAmountOfSym(s, 'X') > getAmountOfSym(s, 'O')))
+        return false;
+
+    for (int i = 0; i < s->length(); i++){
+        for (int j = 0; j < s[i].length(); j++){
+            if (s[i][j] != 'O' && s[i][j] != 'X' && s[i][j] != '.')
+                return false;
+        }
+    }
+
+    return true;
+}
+
+
 
 
 

@@ -39,5 +39,26 @@ std::string convertForCompareInt(std::string);
 
 std::string convertForCompareFraction(std::string);
 
-std::string MoreOrLess (std::string a, std::string b);
+std::string MoreOrLess(std::string a, std::string b);
+
+void outputField(std::string *s);
+
+char getElem(std::string *s, int x, int y);
+
+std::string getLine(std::string *s, int x);
+
+std::string getColumn(std::string *s, int x);
+
+bool isWinnerInLine(std::string s);
+
+bool isWinnerInDiagonal1(std::string *s);
+
+bool isWinnerInDiagonal2(std::string *s);
+
+int getAmountOfSym(std::string *s, char ch);
+
+std::string getWinner(std::string *s);
+
+bool isValidField(std::string *s);
+
 #endif //HOMEWORK_11_HELPER_H
