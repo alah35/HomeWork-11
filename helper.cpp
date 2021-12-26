@@ -41,7 +41,16 @@ void task4(){
 }
 
 void task5() {
-
+    std::string line1, line2, line3;
+    std::cout << "Enter the playing field state:\n";
+    std::cin >> line1 >> line2 >> line3;
+    const int SIZE_FIELD = 3;
+    std::string field[SIZE_FIELD] = {line1, line2, line3};
+    outputField(field);
+    if (!isValidField(field))
+        std::cout << "Incorrect";
+    else
+        std::cout << getWinner(field);
 }
 
 std::string encrypt_caesar (std::string s, int parameter) { // encrypt string
@@ -303,13 +312,11 @@ bool isWinnerInDiagonal1(std::string *s) {
 }
 
 bool isWinnerInDiagonal2(std::string *s) {
-    for (int i = 0; i < s->length(); i++) {
-       for (int j = s[i].length() - 1; j > 1; j--) {
-           if (s[i][j] == s[i][j - 1])
-               continue;
-           else
-               return false;
-       }
+    for (int i = 0, j = s[i].length() - 1; i < s->length() - 1 && j > 0; i++, j--) {
+        if (s[i][j] == s[i + 1][j - 1])
+            continue;
+        else
+            return false;
     }
     return true;
 }
@@ -327,14 +334,14 @@ int getAmountOfSym(std::string *s, char ch) {
 
 std::string getWinner(std::string *s) {
     char winner = ' ';
-    for (int i = 0; i <s->length(); i++) {
+    for (int i = 0; i < s->length(); i++) {
         if (isWinnerInLine(getLine(s, i)) || isWinnerInLine(getColumn(s, i)))
             winner = getElem(s, i, i);
     }
     if (isWinnerInDiagonal1(s))
         winner = s[0][0];
     if (isWinnerInDiagonal2(s))
-        winner = s[0][s[0].length()];
+        winner = s[0][s[0].length() - 1];
 
     if (winner == 'X')
         return "Petya won";
@@ -357,7 +364,7 @@ bool isValidField(std::string *s) {
     if (isWinnerInDiagonal2(s))
         amountWins++;
 
-    if (amountWins > 1)
+    if (amountWins > 1 || getAmountOfSym(s,'O') > getAmountOfSym(s, 'X'))
         return false;
 
     if (getWinner(s) == "Petya won" && (getAmountOfSym(s, 'O') >= getAmountOfSym(s, 'X')))

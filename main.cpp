@@ -13,5 +13,4 @@ int main() {
         std::cout << "Incorrect";
     else
         std::cout << getWinner(field);
-
 }
