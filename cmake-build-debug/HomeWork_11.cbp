@@ -82,13 +82,37 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/HomeWorks/HomeWork-11/helper.cpp">
-			<Option target="HomeWork_11"/>
-		</Unit>
-		<Unit filename="E:/HomeWorks/HomeWork-11/helper.h">
-			<Option target="HomeWork_11"/>
-		</Unit>
 		<Unit filename="E:/HomeWorks/HomeWork-11/main.cpp">
+			<Option target="HomeWork_11"/>
+		</Unit>
+		<Unit filename="E:/HomeWorks/HomeWork-11/task_1.cpp">
+			<Option target="HomeWork_11"/>
+		</Unit>
+		<Unit filename="E:/HomeWorks/HomeWork-11/task_1.h">
+			<Option target="HomeWork_11"/>
+		</Unit>
+		<Unit filename="E:/HomeWorks/HomeWork-11/task_2.cpp">
+			<Option target="HomeWork_11"/>
+		</Unit>
+		<Unit filename="E:/HomeWorks/HomeWork-11/task_2.h">
+			<Option target="HomeWork_11"/>
+		</Unit>
+		<Unit filename="E:/HomeWorks/HomeWork-11/task_3.cpp">
+			<Option target="HomeWork_11"/>
+		</Unit>
+		<Unit filename="E:/HomeWorks/HomeWork-11/task_3.h">
+			<Option target="HomeWork_11"/>
+		</Unit>
+		<Unit filename="E:/HomeWorks/HomeWork-11/task_4.cpp">
+			<Option target="HomeWork_11"/>
+		</Unit>
+		<Unit filename="E:/HomeWorks/HomeWork-11/task_4.h">
+			<Option target="HomeWork_11"/>
+		</Unit>
+		<Unit filename="E:/HomeWorks/HomeWork-11/task_5.cpp">
+			<Option target="HomeWork_11"/>
+		</Unit>
+		<Unit filename="E:/HomeWorks/HomeWork-11/task_5.h">
 			<Option target="HomeWork_11"/>
 		</Unit>
 		<Unit filename="E:/HomeWorks/HomeWork-11/CMakeLists.txt">

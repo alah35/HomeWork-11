@@ -82,35 +82,99 @@ CMakeFiles/HomeWork_11.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HomeWork_11.dir/main.cpp.s"
 	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\HomeWorks\HomeWork-11\main.cpp -o CMakeFiles\HomeWork_11.dir\main.cpp.s
 
-CMakeFiles/HomeWork_11.dir/helper.cpp.obj: CMakeFiles/HomeWork_11.dir/flags.make
-CMakeFiles/HomeWork_11.dir/helper.cpp.obj: ../helper.cpp
-CMakeFiles/HomeWork_11.dir/helper.cpp.obj: CMakeFiles/HomeWork_11.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\HomeWorks\HomeWork-11\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HomeWork_11.dir/helper.cpp.obj"
-	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HomeWork_11.dir/helper.cpp.obj -MF CMakeFiles\HomeWork_11.dir\helper.cpp.obj.d -o CMakeFiles\HomeWork_11.dir\helper.cpp.obj -c E:\HomeWorks\HomeWork-11\helper.cpp
+CMakeFiles/HomeWork_11.dir/task_1.cpp.obj: CMakeFiles/HomeWork_11.dir/flags.make
+CMakeFiles/HomeWork_11.dir/task_1.cpp.obj: ../task_1.cpp
+CMakeFiles/HomeWork_11.dir/task_1.cpp.obj: CMakeFiles/HomeWork_11.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\HomeWorks\HomeWork-11\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HomeWork_11.dir/task_1.cpp.obj"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HomeWork_11.dir/task_1.cpp.obj -MF CMakeFiles\HomeWork_11.dir\task_1.cpp.obj.d -o CMakeFiles\HomeWork_11.dir\task_1.cpp.obj -c E:\HomeWorks\HomeWork-11\task_1.cpp
 
-CMakeFiles/HomeWork_11.dir/helper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HomeWork_11.dir/helper.cpp.i"
-	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\HomeWorks\HomeWork-11\helper.cpp > CMakeFiles\HomeWork_11.dir\helper.cpp.i
+CMakeFiles/HomeWork_11.dir/task_1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HomeWork_11.dir/task_1.cpp.i"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\HomeWorks\HomeWork-11\task_1.cpp > CMakeFiles\HomeWork_11.dir\task_1.cpp.i
 
-CMakeFiles/HomeWork_11.dir/helper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HomeWork_11.dir/helper.cpp.s"
-	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\HomeWorks\HomeWork-11\helper.cpp -o CMakeFiles\HomeWork_11.dir\helper.cpp.s
+CMakeFiles/HomeWork_11.dir/task_1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HomeWork_11.dir/task_1.cpp.s"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\HomeWorks\HomeWork-11\task_1.cpp -o CMakeFiles\HomeWork_11.dir\task_1.cpp.s
+
+CMakeFiles/HomeWork_11.dir/task_2.cpp.obj: CMakeFiles/HomeWork_11.dir/flags.make
+CMakeFiles/HomeWork_11.dir/task_2.cpp.obj: ../task_2.cpp
+CMakeFiles/HomeWork_11.dir/task_2.cpp.obj: CMakeFiles/HomeWork_11.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\HomeWorks\HomeWork-11\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HomeWork_11.dir/task_2.cpp.obj"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HomeWork_11.dir/task_2.cpp.obj -MF CMakeFiles\HomeWork_11.dir\task_2.cpp.obj.d -o CMakeFiles\HomeWork_11.dir\task_2.cpp.obj -c E:\HomeWorks\HomeWork-11\task_2.cpp
+
+CMakeFiles/HomeWork_11.dir/task_2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HomeWork_11.dir/task_2.cpp.i"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\HomeWorks\HomeWork-11\task_2.cpp > CMakeFiles\HomeWork_11.dir\task_2.cpp.i
+
+CMakeFiles/HomeWork_11.dir/task_2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HomeWork_11.dir/task_2.cpp.s"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\HomeWorks\HomeWork-11\task_2.cpp -o CMakeFiles\HomeWork_11.dir\task_2.cpp.s
+
+CMakeFiles/HomeWork_11.dir/task_3.cpp.obj: CMakeFiles/HomeWork_11.dir/flags.make
+CMakeFiles/HomeWork_11.dir/task_3.cpp.obj: ../task_3.cpp
+CMakeFiles/HomeWork_11.dir/task_3.cpp.obj: CMakeFiles/HomeWork_11.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\HomeWorks\HomeWork-11\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HomeWork_11.dir/task_3.cpp.obj"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HomeWork_11.dir/task_3.cpp.obj -MF CMakeFiles\HomeWork_11.dir\task_3.cpp.obj.d -o CMakeFiles\HomeWork_11.dir\task_3.cpp.obj -c E:\HomeWorks\HomeWork-11\task_3.cpp
+
+CMakeFiles/HomeWork_11.dir/task_3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HomeWork_11.dir/task_3.cpp.i"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\HomeWorks\HomeWork-11\task_3.cpp > CMakeFiles\HomeWork_11.dir\task_3.cpp.i
+
+CMakeFiles/HomeWork_11.dir/task_3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HomeWork_11.dir/task_3.cpp.s"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\HomeWorks\HomeWork-11\task_3.cpp -o CMakeFiles\HomeWork_11.dir\task_3.cpp.s
+
+CMakeFiles/HomeWork_11.dir/task_4.cpp.obj: CMakeFiles/HomeWork_11.dir/flags.make
+CMakeFiles/HomeWork_11.dir/task_4.cpp.obj: ../task_4.cpp
+CMakeFiles/HomeWork_11.dir/task_4.cpp.obj: CMakeFiles/HomeWork_11.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\HomeWorks\HomeWork-11\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HomeWork_11.dir/task_4.cpp.obj"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HomeWork_11.dir/task_4.cpp.obj -MF CMakeFiles\HomeWork_11.dir\task_4.cpp.obj.d -o CMakeFiles\HomeWork_11.dir\task_4.cpp.obj -c E:\HomeWorks\HomeWork-11\task_4.cpp
+
+CMakeFiles/HomeWork_11.dir/task_4.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HomeWork_11.dir/task_4.cpp.i"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\HomeWorks\HomeWork-11\task_4.cpp > CMakeFiles\HomeWork_11.dir\task_4.cpp.i
+
+CMakeFiles/HomeWork_11.dir/task_4.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HomeWork_11.dir/task_4.cpp.s"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\HomeWorks\HomeWork-11\task_4.cpp -o CMakeFiles\HomeWork_11.dir\task_4.cpp.s
+
+CMakeFiles/HomeWork_11.dir/task_5.cpp.obj: CMakeFiles/HomeWork_11.dir/flags.make
+CMakeFiles/HomeWork_11.dir/task_5.cpp.obj: ../task_5.cpp
+CMakeFiles/HomeWork_11.dir/task_5.cpp.obj: CMakeFiles/HomeWork_11.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\HomeWorks\HomeWork-11\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HomeWork_11.dir/task_5.cpp.obj"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HomeWork_11.dir/task_5.cpp.obj -MF CMakeFiles\HomeWork_11.dir\task_5.cpp.obj.d -o CMakeFiles\HomeWork_11.dir\task_5.cpp.obj -c E:\HomeWorks\HomeWork-11\task_5.cpp
+
+CMakeFiles/HomeWork_11.dir/task_5.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HomeWork_11.dir/task_5.cpp.i"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\HomeWorks\HomeWork-11\task_5.cpp > CMakeFiles\HomeWork_11.dir\task_5.cpp.i
+
+CMakeFiles/HomeWork_11.dir/task_5.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HomeWork_11.dir/task_5.cpp.s"
+	"E:\JetBrains\CLion 2021.3\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\HomeWorks\HomeWork-11\task_5.cpp -o CMakeFiles\HomeWork_11.dir\task_5.cpp.s
 
 # Object files for target HomeWork_11
 HomeWork_11_OBJECTS = \
 "CMakeFiles/HomeWork_11.dir/main.cpp.obj" \
-"CMakeFiles/HomeWork_11.dir/helper.cpp.obj"
+"CMakeFiles/HomeWork_11.dir/task_1.cpp.obj" \
+"CMakeFiles/HomeWork_11.dir/task_2.cpp.obj" \
+"CMakeFiles/HomeWork_11.dir/task_3.cpp.obj" \
+"CMakeFiles/HomeWork_11.dir/task_4.cpp.obj" \
+"CMakeFiles/HomeWork_11.dir/task_5.cpp.obj"
 
 # External object files for target HomeWork_11
 HomeWork_11_EXTERNAL_OBJECTS =
 
 HomeWork_11.exe: CMakeFiles/HomeWork_11.dir/main.cpp.obj
-HomeWork_11.exe: CMakeFiles/HomeWork_11.dir/helper.cpp.obj
+HomeWork_11.exe: CMakeFiles/HomeWork_11.dir/task_1.cpp.obj
+HomeWork_11.exe: CMakeFiles/HomeWork_11.dir/task_2.cpp.obj
+HomeWork_11.exe: CMakeFiles/HomeWork_11.dir/task_3.cpp.obj
+HomeWork_11.exe: CMakeFiles/HomeWork_11.dir/task_4.cpp.obj
+HomeWork_11.exe: CMakeFiles/HomeWork_11.dir/task_5.cpp.obj
 HomeWork_11.exe: CMakeFiles/HomeWork_11.dir/build.make
 HomeWork_11.exe: CMakeFiles/HomeWork_11.dir/linklibs.rsp
 HomeWork_11.exe: CMakeFiles/HomeWork_11.dir/objects1.rsp
 HomeWork_11.exe: CMakeFiles/HomeWork_11.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\HomeWorks\HomeWork-11\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable HomeWork_11.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\HomeWorks\HomeWork-11\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable HomeWork_11.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\HomeWork_11.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

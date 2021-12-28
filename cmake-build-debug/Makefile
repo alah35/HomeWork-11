@@ -128,30 +128,6 @@ HomeWork_11/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/build
 .PHONY : HomeWork_11/fast
 
-helper.obj: helper.cpp.obj
-.PHONY : helper.obj
-
-# target to build an object file
-helper.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/helper.cpp.obj
-.PHONY : helper.cpp.obj
-
-helper.i: helper.cpp.i
-.PHONY : helper.i
-
-# target to preprocess a source file
-helper.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/helper.cpp.i
-.PHONY : helper.cpp.i
-
-helper.s: helper.cpp.s
-.PHONY : helper.s
-
-# target to generate assembly for a file
-helper.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/helper.cpp.s
-.PHONY : helper.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -176,6 +152,126 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+task_1.obj: task_1.cpp.obj
+.PHONY : task_1.obj
+
+# target to build an object file
+task_1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_1.cpp.obj
+.PHONY : task_1.cpp.obj
+
+task_1.i: task_1.cpp.i
+.PHONY : task_1.i
+
+# target to preprocess a source file
+task_1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_1.cpp.i
+.PHONY : task_1.cpp.i
+
+task_1.s: task_1.cpp.s
+.PHONY : task_1.s
+
+# target to generate assembly for a file
+task_1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_1.cpp.s
+.PHONY : task_1.cpp.s
+
+task_2.obj: task_2.cpp.obj
+.PHONY : task_2.obj
+
+# target to build an object file
+task_2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_2.cpp.obj
+.PHONY : task_2.cpp.obj
+
+task_2.i: task_2.cpp.i
+.PHONY : task_2.i
+
+# target to preprocess a source file
+task_2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_2.cpp.i
+.PHONY : task_2.cpp.i
+
+task_2.s: task_2.cpp.s
+.PHONY : task_2.s
+
+# target to generate assembly for a file
+task_2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_2.cpp.s
+.PHONY : task_2.cpp.s
+
+task_3.obj: task_3.cpp.obj
+.PHONY : task_3.obj
+
+# target to build an object file
+task_3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_3.cpp.obj
+.PHONY : task_3.cpp.obj
+
+task_3.i: task_3.cpp.i
+.PHONY : task_3.i
+
+# target to preprocess a source file
+task_3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_3.cpp.i
+.PHONY : task_3.cpp.i
+
+task_3.s: task_3.cpp.s
+.PHONY : task_3.s
+
+# target to generate assembly for a file
+task_3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_3.cpp.s
+.PHONY : task_3.cpp.s
+
+task_4.obj: task_4.cpp.obj
+.PHONY : task_4.obj
+
+# target to build an object file
+task_4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_4.cpp.obj
+.PHONY : task_4.cpp.obj
+
+task_4.i: task_4.cpp.i
+.PHONY : task_4.i
+
+# target to preprocess a source file
+task_4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_4.cpp.i
+.PHONY : task_4.cpp.i
+
+task_4.s: task_4.cpp.s
+.PHONY : task_4.s
+
+# target to generate assembly for a file
+task_4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_4.cpp.s
+.PHONY : task_4.cpp.s
+
+task_5.obj: task_5.cpp.obj
+.PHONY : task_5.obj
+
+# target to build an object file
+task_5.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_5.cpp.obj
+.PHONY : task_5.cpp.obj
+
+task_5.i: task_5.cpp.i
+.PHONY : task_5.i
+
+# target to preprocess a source file
+task_5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_5.cpp.i
+.PHONY : task_5.cpp.i
+
+task_5.s: task_5.cpp.s
+.PHONY : task_5.s
+
+# target to generate assembly for a file
+task_5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HomeWork_11.dir\build.make CMakeFiles/HomeWork_11.dir/task_5.cpp.s
+.PHONY : task_5.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -185,12 +281,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... HomeWork_11
-	@echo ... helper.obj
-	@echo ... helper.i
-	@echo ... helper.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... task_1.obj
+	@echo ... task_1.i
+	@echo ... task_1.s
+	@echo ... task_2.obj
+	@echo ... task_2.i
+	@echo ... task_2.s
+	@echo ... task_3.obj
+	@echo ... task_3.i
+	@echo ... task_3.s
+	@echo ... task_4.obj
+	@echo ... task_4.i
+	@echo ... task_4.s
+	@echo ... task_5.obj
+	@echo ... task_5.i
+	@echo ... task_5.s
 .PHONY : help
 
 

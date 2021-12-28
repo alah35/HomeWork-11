@@ -1,5 +1,9 @@
 #include <iostream>
-#include "helper.h"
+#include "Headers/task_1.h"
+#include "Headers/task_2.h"
+#include "Headers/task_3.h"
+#include "Headers/task_4.h"
+#include "Headers/task_5.h"
 
 
 int main() {
