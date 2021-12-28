@@ -5,7 +5,7 @@
 int main() {
     int num;
     do {
-    std::cout << "For exit enter -1.\n Enter task number: ";
+    std::cout << "\nFor exit enter -1.\n Enter task number: ";
     std::cin >> num;
         switch (num) {
             case 1:

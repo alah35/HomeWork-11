@@ -6,6 +6,7 @@ void task1() {
     std::string input;
     int parameter;
     std::cout << "Enter your text: ";
+    std::cin.ignore(256, '\n');
     std::getline(std::cin, input);
     std::cout << "Enter the encryption parameter: ";
     std::cin >> parameter;
