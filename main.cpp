@@ -3,14 +3,28 @@
 
 
 int main() {
-    std::string line1, line2, line3;
-    std::cout << "Enter the playing field state:\n";
-    std::cin >> line1 >> line2 >> line3;
-    const int SIZE_FIELD = 3;
-    std::string field[SIZE_FIELD] = {line1, line2, line3};
-    outputField(field);
-    if (!isValidField(field))
-        std::cout << "Incorrect";
-    else
-        std::cout << getWinner(field);
+    int num;
+    do {
+    std::cout << "For exit enter -1.\n Enter task number: ";
+    std::cin >> num;
+        switch (num) {
+            case 1:
+                task1();
+                break;
+            case 2:
+                task2();
+                break;
+            case 3:
+                task3();
+                break;
+            case 4:
+                task4();
+                break;
+            case 5:
+                task5();
+                break;
+            default:
+                std::cout << "Wrong number. Try again\n";
+        }
+    } while (num != -1);
 }
