@@ -1,5 +1,5 @@
-#include "../Headers/task_3.h"
-#include "../Headers/task_2.h"
+#include "task_3.h"
+#include "../Task_2/task_2.h"
 #include <string>
 #include <iostream>
 

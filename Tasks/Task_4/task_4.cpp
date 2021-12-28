@@ -1,5 +1,5 @@
-#include "../Headers/task_4.h"
-#include "../Headers/task_3.h"
+#include "task_4.h"
+#include "../Task_3/task_3.h"
 
 void task4(){
     std::string a, b;

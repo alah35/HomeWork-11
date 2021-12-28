@@ -1,9 +1,9 @@
 #include <iostream>
-#include "Headers/task_1.h"
-#include "Headers/task_2.h"
-#include "Headers/task_3.h"
-#include "Headers/task_4.h"
-#include "Headers/task_5.h"
+#include "Tasks/Task_1/task_1.h"
+#include "Tasks/Task_2/task_2.h"
+#include "Tasks/Task_3/task_3.h"
+#include "Tasks/Task_4/task_4.h"
+#include "Tasks/Task_5/task_5.h"
 
 
 int main() {

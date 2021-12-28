@@ -1,4 +1,4 @@
-#include "../Headers/task_5.h"
+#include "task_5.h"
 
 void task5() {
     std::string line1, line2, line3;

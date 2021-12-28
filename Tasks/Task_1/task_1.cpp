@@ -1,6 +1,6 @@
 #include <string>
 #include <iostream>
-#include "../Headers/task_1.h"
+#include "task_1.h"
 
 void task1() {
     std::string input;

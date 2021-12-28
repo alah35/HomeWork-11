@@ -1,4 +1,4 @@
-#include "../Headers/task_2.h"
+#include "task_2.h"
 #include <string>
 #include <iostream>
 
