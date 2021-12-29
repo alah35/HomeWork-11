@@ -16,6 +16,7 @@ void task1() {
 }
 
 std::string encrypt_caesar (std::string s, int parameter) { // encrypt string
+   parameter = abs(parameter % 26);
     for (int i = 0; i < s.length(); i++) {
         if ( (s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z') ) {
             if (s[i] + parameter > 'Z' && s[i] == toupper(s[i])) {
@@ -29,14 +30,5 @@ std::string encrypt_caesar (std::string s, int parameter) { // encrypt string
 }
 
 std::string decrypt_caesar (std::string s, int parameter) { // decrypt string
-    for (int i = 0; i < s.length(); i++) {
-        if ( (s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z') ) {
-            if (s[i] - parameter < 'A' && s[i] == toupper(s[i]))
-                s[i] = 'Z' - ('A' - (s[i] - parameter)) + 1;
-            else if (s[i] - parameter < 'a' && s[i] != toupper(s[i]))
-                s[i] = 'z' - ('a' - (s[i] - parameter)) + 1;
-            else s[i] -= parameter;
-        }
-    }
-    return s;
+    return encrypt_caesar(s, 26 - (parameter % 26));
 }
