@@ -8,9 +8,11 @@ void task4();
 
 bool isCorrectNum(std::string s);
 
-std::string convertForCompareInt(std::string);
+std::string getIntPart(std::string s);
 
-std::string convertForCompareFraction(std::string);
+std::string getFracPart(std::string s);
+
+char getFracNum (std::string s, int x);
 
 std::string MoreOrLess(std::string a, std::string b);
 

@@ -7,6 +7,10 @@ void task4(){
     std::cin >> a;
     std::cout << "b = ";
     std::cin >> b;
+
+//    std::cout << getIntPart(a) << " " << getFracPart(a) << std::endl;
+//    std::cout << getIntPart(b) << " " << getFracPart(b) << std::endl;
+
     std::cout << MoreOrLess(a, b);
 }
 
@@ -26,56 +30,92 @@ bool isCorrectNum(std::string s) {
                     }
                 }
             }
-            if (s[i] >= '0' && s[i] <= '9') isThereNum = true;
+            if (s[i] >= '0' && s[i] <= '9') isThereNum = true; //alternative: bool isThereNum = s[i] >= '0' && s[i] <= '9';
         }
-        if (s.length() == 1 && s[0] >= '0' && s[0] <= '9') isThereNum = true;
+        if (s.length() == 1 && s[0] >= '0' && s[0] <= '9') isThereNum = true; // isThereNum = s.length() == 1 && s[0] >= '0' && s[0] <= '9';
     }
     if (!isThereNum)
         return false;
     return true;
 }
 
-std::string convertForCompareInt(std::string s) {
-    if (s == "")
+std::string getIntPart(std::string s) {
+    if (s[0] == '.') {
         return "0";
-    std::string num = "";
-    if (s[0] == '-' && s.length() == 1) {
-        return "-0";
-    } else if (s[0] == '0') {
-        for (int i = 1; i < s.length(); i++) {
-            num += s[i];
-        }
     } else {
-        for (int i = 0; i < s.length(); i++) {
-            num += s[i];
+        std::string result = "";
+        int endIntPart = s.find('.');
+        if (endIntPart == std::string::npos)
+            endIntPart = s.length();
+        for (int i = 0; i < endIntPart; i++) {
+            result += s[i];
         }
+        if (result == "-")
+            return "-1";
+        else
+            return result;
     }
-    return num;
 }
 
-std::string convertForCompareFraction(std::string s) {
-    if (s == "")
+std::string getFracPart(std::string s) {
+    std::string result = "";
+    if (s[s.length() - 1] == '.' || s.find('.') == std::string::npos)
         return "0";
-    std::string num = "";
-    for(int i = 0; i < s.length(); i++) {
-        num += s[i];
+    else {
+        for (int i = s.find('.') + 1; i < s.length(); i++) {
+            result += s[i];
+        }
     }
-    return num;
+    return result;
+}
+
+char getFracNum (std::string s, int x) {
+    if (x > (s.length() - 1))
+        return '0';
+    else
+        return s[x];
 }
 
 std::string MoreOrLess(std::string a, std::string b) {
     if (isCorrectNum(a) && isCorrectNum(b)) {
-        std::string num1Int = convertForCompareInt(getPartFromString(a, 1, '.'));
-        std::string num2Int = convertForCompareInt(getPartFromString(b, 1, '.'));
-        std::string num1Frac = convertForCompareFraction(getPartFromString(a, 2, '.'));
-        std::string num2Frac = convertForCompareFraction(getPartFromString(b, 2, '.'));
-        std::string num1 = num1Int + '.' + num1Frac;
-        std::string num2 = num2Int + '.' + num2Frac;
-        if (std::stof(num1) > std::stof(num2))
-            return "More";
-        else if (std::stof(num1) < std::stof(num2))
-            return "Less";
-        else return "Equal";
+        std::string aInt = getIntPart(a);
+        std::string bInt = getIntPart(b);
+        if (aInt[0] != '-' && bInt[0] != '-') {
+            if (aInt.length() > bInt.length())
+                return "More";
+            if (aInt.length() < bInt.length())
+                return "Less";
+        } else if (aInt[0] == '-' && bInt[0] == '-') {
+            if (aInt.length() > bInt.length())
+                return "Less";
+            if (aInt.length() < bInt.length())
+                return "More";
+        }
+        for (int i = 0; i < aInt.length(); i++) {
+            if (aInt[i] > bInt[i])
+                return "More";
+            if (aInt[i] < bInt[i])
+                return "Less";
+        }
+
+        int endCompare;
+        std::string aFrac = getFracPart(a);
+        std::string bFrac = getFracPart(b);
+        aFrac.length() > bFrac.length() ? endCompare = aFrac.length() : endCompare = bFrac.length();
+        for (int i = 0; i < endCompare; i++) {
+            if (aInt[0] == '-' && bInt[0] == '-') {
+                if (getFracNum(aFrac, i) > getFracNum(bFrac, i))
+                    return "Less";
+                if (getFracNum(aFrac, i) < getFracNum(bFrac, i))
+                    return "More";
+            } else {
+                if (getFracNum(aFrac, i) > getFracNum(bFrac, i))
+                    return "More";
+                if (getFracNum(aFrac, i) < getFracNum(bFrac, i))
+                    return "Less";
+            }
+        }
+        return "Equal";
     } else
-        return "-1";
+        return "Uncorrect numbers";
 }
