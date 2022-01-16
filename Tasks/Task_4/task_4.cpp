@@ -47,11 +47,21 @@ std::string getIntPart(std::string s) {
         int endIntPart = s.find('.');
         if (endIntPart == std::string::npos)
             endIntPart = s.length();
-        for (int i = 0; i < endIntPart; i++) {
+        int i = 0;
+        if (s[0] == '-') {
+            result += '-';
+            i = 1;
+        }
+        while (s[i] == '0') {
+            if (i + 1 == endIntPart)
+                break;
+            else i++;
+        }
+        for (; i < endIntPart; i++) {
             result += s[i];
         }
         if (result == "-")
-            return "-1";
+            return "-0";
         else
             return result;
     }

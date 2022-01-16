@@ -37,7 +37,7 @@ std::string getLine(std::string *s, int x) {
 
 std::string getColumn(std::string *s, int x) {
     std::string column;
-    for (int i = 0; i <s->length(); i++) {
+    for (int i = 0; i < s->length(); i++) {
         column += s[i][x];
     }
     return column;
@@ -104,32 +104,52 @@ std::string getWinner(std::string *s) {
 }
 
 bool isValidField(std::string *s) {
-    int amountWins = 0;
-    for (int i = 0; i < s->length(); i++) {
-        if (isWinnerInLine(getLine(s, i)))
-            amountWins++;
-        if (isWinnerInLine(getColumn(s, i)))
-            amountWins++;
-    }
-    if (isWinnerInDiagonal1(s))
-        amountWins++;
-    if (isWinnerInDiagonal2(s))
-        amountWins++;
-
-    if (amountWins > 1 || getAmountOfSym(s,'O') > getAmountOfSym(s, 'X'))
-        return false;
-
-    if (getWinner(s) == "Petya won" && (getAmountOfSym(s, 'O') >= getAmountOfSym(s, 'X')))
-        return false;
-    if (getWinner(s) == "Vanya won" && (getAmountOfSym(s, 'X') > getAmountOfSym(s, 'O')))
-        return false;
-
     for (int i = 0; i < s->length(); i++){
         for (int j = 0; j < s[i].length(); j++){
             if (s[i][j] != 'O' && s[i][j] != 'X' && s[i][j] != '.')
                 return false;
         }
     }
+
+    int amountWinsX = 0, amountWinsO = 0;
+    for (int i = 0; i < s->length(); i++) {
+        if (isWinnerInLine(getLine(s, i))) {
+            if (getElem(s, i, i) == 'X')
+                amountWinsX++;
+            if (getElem(s, i, i) == 'O')
+                amountWinsO++;
+        }
+        if (isWinnerInLine(getColumn(s, i))) {
+            if (getElem(s, i, i) == 'X')
+                amountWinsX++;
+            if (getElem(s, i, i) == 'O')
+                amountWinsO++;
+        }
+    }
+
+    if (isWinnerInDiagonal1(s)) {
+        if (getElem(s, 0, 0) == 'X')
+            amountWinsX++;
+        if (getElem(s, 0, 0) == 'O')
+            amountWinsO++;
+    }
+    if (isWinnerInDiagonal2(s)) {
+        if (getElem(s, s->length(), s->length()) == 'X')
+            amountWinsX++;
+        if (getElem(s, s->length(), s->length()) == 'O')
+            amountWinsO++;
+    }
+
+    if ( (amountWinsX > 0 && amountWinsO != 0) || (amountWinsO > 0 && amountWinsX != 0)
+        || amountWinsX >=3 || amountWinsO >= 3)
+        return false;
+
+    if (amountWinsX > 0 && (getAmountOfSym(s, 'O') >= getAmountOfSym(s, 'X')))
+        return false;
+    if (amountWinsO > 0 && (getAmountOfSym(s, 'X') > getAmountOfSym(s, 'O')))
+        return false;
+    if (getAmountOfSym(s, 'O') > getAmountOfSym(s, 'X'))
+        return false;
 
     return true;
 }
