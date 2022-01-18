@@ -60,8 +60,13 @@ std::string getIntPart(std::string s) {
         for (; i < endIntPart; i++) {
             result += s[i];
         }
-        if (result == "-")
-            return "-0";
+        if (result == "-") {
+            if (getFracPart(s) != "0")
+                return "-0";
+            else
+                return "0";
+        } else if (result == "-0" && getFracPart(s) == "0")
+            return "0";
         else
             return result;
     }
@@ -76,7 +81,11 @@ std::string getFracPart(std::string s) {
             result += s[i];
         }
     }
-    return result;
+    for (int i = result.length() - 1; i >= 0; i--) {
+        if (result[i] != '0')
+            return result;
+    }
+    return "0";
 }
 
 char getFracNum (std::string s, int x) {
